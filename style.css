@@ -19,7 +19,8 @@ h1{
 }
 .messages1 .content-left img{
     width:75%;
-    border-radius: 15px;   
+    border-radius: 15px;  
+    margin: 18px 0; 
 }
 .messages1 .content-left .name {
     margin: 16px 35px;
@@ -65,15 +66,16 @@ h1{
 .messages2 .content-right img{
     width: 60%;
     border-radius: 15px;
-    margin: 0px 150px;
+    margin: 30px 150px;
 }
 .messages2 .content-right .name{
     font-weight: 600;
+    text-align: right;
+    margin: -10px 75px;
     
-    text-align: center;
     
     
 }
 .messages2 .content-right .post{
-    margin: 15px 200px;
+    margin: 20px 200px;
 }
