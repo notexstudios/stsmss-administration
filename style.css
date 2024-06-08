@@ -1,3 +1,4 @@
+
 h1{
     text-align: center;
     color:#0A1535;
@@ -71,11 +72,101 @@ h1{
 .messages2 .content-right .name{
     font-weight: 600;
     text-align: right;
-    margin: -10px 75px;
-    
-    
-    
+    margin: -10px 75px;   
 }
 .messages2 .content-right .post{
     margin: 20px 200px;
 }
+
+@media  screen  and (max-width: 640px) {
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    .messages1, .messages2 {
+        padding: 40px 0;
+    }
+    
+    .messages1 .row, 
+    .messages2 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .messages1 .content-left, 
+    .messages1 .content-right, 
+    .messages2 .content-left, 
+    .messages2 .content-right {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .messages1 .content-left img,
+    .messages2 .content-right img {
+        width: 90%;
+        margin: 18px auto;
+    }
+    
+    .messages1 .content-left .name,
+    .messages2 .content-right .name {
+        margin: 16px 0;
+    }
+    
+    .messages1 .content-left .post,
+    .messages2 .content-right .post {
+        margin: 16px 0;
+    }
+    
+    .messages1 .content-right p, 
+    .messages2 .content-left p {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Order specific styles for 640px */
+@media screen and (max-width: 640px) {
+    .messages1 .row, .messages2 .row {
+        flex-direction: column;
+    }
+    
+    .messages1 .content-left, 
+    .messages1 .content-right,
+    .messages2 .content-left,
+    .messages2 .content-right {
+        order: initial;
+    }
+    
+    .messages1 .content-left img:nth-of-type(1), 
+    .messages2 .content-right p:nth-of-type(1) {
+        order: 1;
+    }
+    
+    .messages1 .content-right img:nth-of-type(1), 
+    .messages2 .content-left p:nth-of-type(1) {
+        order: 2;
+    }
+    
+    .messages1 .content-left img:nth-of-type(2), 
+    .messages2 .content-right p:nth-of-type(2) {
+        order: 3;
+    }
+    
+    .messages1 .content-right img:nth-of-type(2), 
+    .messages2 .content-left p:nth-of-type(2) {
+        order: 4;
+    }
+    
+    .messages1 .content-left img:nth-of-type(3), 
+    .messages2 .content-right p:nth-of-type(3) {
+        order: 5;
+    }
+    
+    .messages1 .content-right img:nth-of-type(3), 
+    .messages2 .content-left p:nth-of-type(3) {
+        order: 6;
+    }
+}
+        
