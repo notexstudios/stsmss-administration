@@ -71,11 +71,15 @@ h1{
 }
 .messages2 .content-right .name{
     font-weight: 600;
-    text-align: right;
+    text-align: center;
     margin: -10px 75px;   
 }
 .messages2 .content-right .post{
     margin: 20px 200px;
+}
+
+div.responsive-fix-01{
+    display:none;
 }
 
 @media  screen  and (max-width: 640px) {
@@ -167,6 +171,18 @@ h1{
     .messages1 .content-right img:nth-of-type(3), 
     .messages2 .content-left p:nth-of-type(3) {
         order: 6;
+    }
+
+    div.responsive-fix-01{
+        display: block;
+    }
+
+    div.responsive-fix-02{
+        display:none;
+    }
+
+    .messages1 .content-right p{ 
+        font-size: 16px;  
     }
 }
         
