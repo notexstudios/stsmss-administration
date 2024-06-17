@@ -185,4 +185,104 @@ div.responsive-fix-01{
         font-size: 16px;  
     }
 }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+    
+    .messages1, .messages2 {
+        padding: 50px 0;
+    }
+    
+    .messages1 .row, 
+    .messages2 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .messages1 .content-left, 
+    .messages1 .content-right, 
+    .messages2 .content-left, 
+    .messages2 .content-right {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .messages1 .content-left img,
+    .messages2 .content-right img {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .messages1 .content-left .name,
+    .messages2 .content-right .name {
+        margin: 18px 0;
+    }
+    
+    .messages1 .content-left .post,
+    .messages2 .content-right .post {
+        margin: 18px 0;
+    }
+    
+    .messages1 .content-right p, 
+    .messages2 .content-left p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .messages1 .row, .messages2 .row {
+        flex-direction: column;
+    }
+    
+    .messages1 .content-left, 
+    .messages1 .content-right,
+    .messages2 .content-left,
+    .messages2 .content-right {
+        order: initial;
+    }
+    
+    .messages1 .content-left img:nth-of-type(1), 
+    .messages2 .content-right p:nth-of-type(1) {
+        order: 1;
+    }
+    
+    .messages1 .content-right img:nth-of-type(1), 
+    .messages2 .content-left p:nth-of-type(1) {
+        order: 2;
+    }
+    
+    .messages1 .content-left img:nth-of-type(2), 
+    .messages2 .content-right p:nth-of-type(2) {
+        order: 3;
+    }
+    
+    .messages1 .content-right img:nth-of-type(2), 
+    .messages2 .content-left p:nth-of-type(2) {
+        order: 4;
+    }
+    
+    .messages1 .content-left img:nth-of-type(3), 
+    .messages2 .content-right p:nth-of-type(3) {
+        order: 5;
+    }
+    
+    .messages1 .content-right img:nth-of-type(3), 
+    .messages2 .content-left p:nth-of-type(3) {
+        order: 6;
+    }
+
+    div.responsive-fix-01{
+        display: block;
+    }
+
+    div.responsive-fix-02{
+        display:none;
+    }
+
+    .messages1 .content-right p{ 
+        font-size: 18px;  
+    }
+}
         
